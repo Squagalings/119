@@ -1,5 +1,6 @@
 # 1.1.9 Algorithms and Art
-This project uses circles and turtles to draw a spirgraph. Functions like for loops, if statements, while True loops were used. Libraries that were used were turtle and math from Python.
+This project uses circles and turtles to draw a spirgraph. Functions like for loops, if statements, while True loops were used. Libraries that were used were turtle and math from Python.  The tracer module draws everything out first (like each frame) before showing it so it looks like it was instantly there. It does this with every iteration so it appears like the radius is growing, like frame-by-frame animation.
+
 
 ## Planning sketch →
 This was essentially what I was planning to make: https://www.geogebra.org/resource/fq2wxepb/UQ5JtjFYPKhXWyqr/material-fq2wxepb.png
