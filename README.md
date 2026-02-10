@@ -5,19 +5,19 @@ This project uses circles and turtles to draw a spirgraph. Functions like for lo
 This was essentially what I was planning to make: https://www.geogebra.org/resource/fq2wxepb/UQ5JtjFYPKhXWyqr/material-fq2wxepb.png
 
 ## Breakdown:
-Import turtle and math
-Figure out how to make a circle of circles conceptually. Find a way to convert polar to cartesian coordinates.
-Start with a base circle outlined in black, then draw circles of the same radius around it.
-After that copy the same code and change the radius to 100
-Add 2-3 more rings with radius increments of +50
-Add tracer and update lines (2 lines)
-Make an array with 6-7 colors
-Delete all the code for the rings and use a function that changes with radius, so you can draw rings of 50, 100, … 250.
-The function which is a for loop from (-90,270,10) starts at -90 degrees ends at 270 and each circle within a ring shifts by 10 degrees. After every circle set the pen color to the next element in the color array.
-Create a var called zoom_offset that increases the radius of the rings and circles by 7 each iteration.
-Use a while True loop to call the function from step 6, using a current radius instead of the radius argument
-Update current radius with a for i in range 1 to 6, (1-5 inclusive) (i*50) + zoom_offset
-That is how big your radius will be each iteration. And each ring changes together because you multiply by 50 and zoom_offset changes together. So there’s always 50px radius difference in between the circles.
+- Import turtle and math
+- Figure out how to make a circle of circles conceptually. Find a way to convert polar to cartesian coordinates.
+- Start with a base circle outlined in black, then draw circles of the same radius around it.
+- After that copy the same code and change the radius to 100
+- Add 2-3 more rings with radius increments of +50
+- Add tracer and update lines (2 lines)
+- Make an array with 6-7 colors
+- Delete all the code for the rings and use a function that changes with radius, so you can draw rings of 50, 100, … 250.
+- The function which is a for loop from (-90,270,10) starts at -90 degrees ends at 270 and each circle within a ring shifts by 10 degrees. After every circle set the pen color to the next element in the color array.
+- Create a var called zoom_offset that increases the radius of the rings and circles by 7 each iteration.
+- Use a while True loop to call the function from step 6, using a current radius instead of the radius argument
+- Update current radius with a for i in range 1 to 6, (1-5 inclusive) (i*50) + zoom_offset
+- That is how big your radius will be each iteration. And each ring changes together because you multiply by 50 and zoom_offset changes together. So there’s always 50px radius difference in between the circles.
 
 ## Pseudocode:
 ``` python
