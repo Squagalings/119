@@ -20,12 +20,13 @@ Update current radius with a for i in range 1 to 6, (1-5 inclusive) (i*50) + zoo
 That is how big your radius will be each iteration. And each ring changes together because you multiply by 50 and zoom_offset changes together. So there’s always 50px radius difference in between the circles.
 
 ## Pseudocode:
+``` python
 Import turtle as trtl
 Import math
 .
-### setup stuff here
+# setup stuff here
 .
-### colors array
+# colors array
 Colors array = [red, orange, yellow, etc.]
 
 Draw circle function(radius):
@@ -42,7 +43,7 @@ Draw circle function(radius):
 		Y position = 50sin(a)  # because Python math uses radians, but setheading is in degrees
 		(insert whole thing with turtle going to xposition yposition, facing theta(degrees), draw circle with radius, and index+=1
 	
-### zooming in
+# zooming in
 Zoom_offset = 0
 
 This technically counts as movement
@@ -56,3 +57,4 @@ While True:
 		Current radius = (i*50)+zoom offset # you get rings of circles at 50, 100, 150, etc. to 250 and they all expand at the same time by the zoom offset
 
 	wn.update() # just updates the window every iteration
+```
