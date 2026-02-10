@@ -4,9 +4,7 @@ This project uses circles and turtles to draw a spirograph. Functions like for l
 The tracer module draws everything out first (like each frame) before showing it so it looks like it was instantly there. It does this with every iteration so it appears like the radius is growing, like frame-by-frame animation.
 
 ## Tracer
-According to [StackOverflow]Generally, the computer can draw graphics instantaneously. Displaying every drawing update on the screen, and slowing down these updates, so we can see them, is tracing in turtle graphics.
-
-The tracer() function turns automatic screen updates on or off -- on by default -- and also sets the update() delay. In Python 2, the first argument to tracer() is boolean, True to have automatic screen updates on, False to turn them off. , "Generally, the computer can draw graphics instantaneously. Displaying every drawing update on the screen, and slowing down these updates, so we can see them, is tracing in turtle graphics.
+According to [StackOverflow]https://stackoverflow.com/questions/62613041/what-does-turtle-tracer-do, "Generally, the computer can draw graphics instantaneously. Displaying every drawing update on the screen, and slowing down these updates, so we can see them, is tracing in turtle graphics.
 The python `tracer()` function turns automatic screen updates on or off -- on by default -- and also sets the `update()` delay. In Python 2, the first argument to `tracer()` is boolean, `True` to have automatic screen updates on, `False` to turn them off. 
 
 ## Planning sketch →
